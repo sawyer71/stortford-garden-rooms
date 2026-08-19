@@ -207,11 +207,15 @@ const faxNumber = String(formData.get("fax_number") || "");
                 Contact Us
               </p>
 
-              <h2 className="mt-4 text-4xl font-normal leading-tight text-[#23352B] md:text-5xl">
-  Have a question?
-  <br />
-  Let&apos;s talk.
-</h2>
+              <h1 className="mt-6 text-4xl font-light leading-tight text-[#23352B] md:text-5xl">
+  <span className="block whitespace-nowrap">
+    Have a question?
+  </span>
+
+  <span className="mt-2 block">
+    Let&apos;s talk.
+  </span>
+</h1>
 
 <p className="mt-6 max-w-md text-base leading-7 text-[#2A2A2A]/70">
   Whether you have a quick question, want some advice or simply want to
@@ -225,7 +229,7 @@ const faxNumber = String(formData.get("fax_number") || "");
                   </p>
 
                   <p className="mt-2 text-[#23352B]">
-                    Stansted Mountfitchet & Bishops Stortford
+                    Stansted Mountfitchet & Bishop&apos;s Stortford
                   </p>
                 </div>
 
@@ -235,7 +239,7 @@ const faxNumber = String(formData.get("fax_number") || "");
                   </p>
 
                   <p className="mt-2 max-w-sm text-sm leading-7 text-[#2A2A2A]/65">
-                    Bishop&apos;s Stortford,
+                    Stansted Mountfitchet, Bishop&apos;s Stortford,
                     Saffron Walden, Great
                     Dunmow, Takeley,
                     Sawbridgeworth, Harlow

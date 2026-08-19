@@ -103,11 +103,15 @@ export default function GardenRoomsPage() {
               Bespoke Garden Rooms
             </p>
 
-            <h1 className="mt-4 text-[42px] font-normal leading-[0.98] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl">
-              Designed for your garden.
-<br />
-Built around your life.
-            </h1>
+            <h1 className="max-w-5xl text-[2.75rem] font-light leading-[1.02] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+  <span className="block whitespace-nowrap">
+    Designed for your garden.
+  </span>
+
+  <span className="mt-3 block whitespace-nowrap">
+    Built around your life.
+  </span>
+</h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80">
               Beautifully designed timber-framed garden rooms, created around your space,

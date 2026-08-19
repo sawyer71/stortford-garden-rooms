@@ -51,71 +51,80 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      {/* WHERE IT BEGAN */}
+      {/* Where It Began */}
 
-      <section className="bg-[#F7F5F2] py-16 md:py-24">
-        <Container>
-          <div className="grid gap-12 lg:grid-cols-12 lg:gap-20">
-            <Reveal className="lg:col-span-5">
-              <p className="text-sm uppercase tracking-[0.3em] text-[#A7744A]">
-                Where It Began
-              </p>
+<section className="bg-[#F5F3EF] py-20 md:py-28">
+  <Container>
+    <div className="grid gap-12 lg:grid-cols-12 lg:items-stretch lg:gap-16">
 
-              <h2 className="mt-6 text-4xl font-light leading-tight text-[#23352B] md:text-6xl">
-                Sometimes the best
-                <br />
-                ideas start at home.
-              </h2>
-            </Reveal>
+      {/* Left — Story */}
 
-            <Reveal
-  delay={0.15}
-  className="lg:col-span-6 lg:col-start-7"
->
-  <p className="mt-6 text-base leading-8 text-[#2A2A2A]/70 md:mt-8">
-    Stortford Garden Rooms began with a project much closer to home —
-    our own.
-  </p>
+      <Reveal className="lg:col-span-5">
+        <div className="flex h-full flex-col justify-center">
+          <p className="text-sm uppercase tracking-[0.3em] text-[#A7744A]">
+            Where It Began
+          </p>
 
-  <p className="mt-4 text-base leading-8 text-[#2A2A2A]/70 md:mt-6">
-    We originally built a garden room because we wanted more usable
-    space without extending the house. But living with it showed us
-    just how much difference a properly designed room at the end of
-    the garden could make.
-  </p>
+          <h2 className="mt-6 text-4xl font-light leading-tight text-[#23352B] md:text-5xl">
+            <span className="block whitespace-nowrap">
+              Sometimes the best
+            </span>
 
-  <p className="mt-4 text-base leading-8 text-[#2A2A2A]/70 md:mt-6">
-    It wasn&apos;t simply extra square footage. It created separation
-    from the house and gave us a space that could have a purpose of
-    its own.
-  </p>
+            <span className="mt-2 block whitespace-nowrap">
+              ideas start at home.
+            </span>
+          </h2>
 
-  <p className="mt-4 text-base leading-8 text-[#2A2A2A]/70 md:mt-6">
-    That first room sparked the idea behind Stortford Garden Rooms:
-    to help other homeowners create beautifully considered spaces
-    designed around the way they actually want to live.
-  </p>
-</Reveal>
+          <div className="mt-8 h-px w-10 bg-[#A7744A]" />
+
+          <div className="mt-7 max-w-xl space-y-5 text-base leading-7 text-[#23352B]/70">
+            <p>
+              Stortford Garden Rooms began with a project much closer to
+              home — our own.
+            </p>
+
+            <p>
+              We originally built a garden room because we wanted more
+              usable space without extending the house. But living with it
+              showed us just how much difference a properly designed room
+              at the end of the garden could make.
+            </p>
+
+            <p>
+              It wasn&apos;t simply extra square footage. It created
+              separation from the house and gave us a space that could have
+              a purpose of its own.
+            </p>
+
+            <p>
+              That first room sparked the idea behind Stortford Garden
+              Rooms: to help other homeowners create beautifully considered
+              spaces designed around the way they actually want to live.
+            </p>
           </div>
-        </Container>
-      </section>
+        </div>
+      </Reveal>
 
-      {/* FEATURE IMAGE */}
+      {/* Right — Garden Room Image */}
 
-      <section className="bg-[#F7F5F2] pb-16 md:pb-24">
-        <Container>
-          <Reveal>
-            <div className="relative aspect-[16/8] overflow-hidden rounded-3xl bg-[#D8D2C7]">
-              <Image
-                src="/images/hero/garden-room-hero-v2.png"
-                alt="Contemporary bespoke garden room"
-                fill
-                className="object-cover transition duration-700 hover:scale-[1.02]"
-              />
-            </div>
-          </Reveal>
-        </Container>
-      </section>
+      <Reveal
+        delay={0.15}
+        className="lg:col-span-7"
+      >
+        <div className="relative min-h-[420px] overflow-hidden rounded-[2rem] md:min-h-[520px] lg:h-full lg:min-h-[600px]">
+          <Image
+            src="/images/hero/garden-room-hero-v2.png"
+            alt="Contemporary bespoke garden room"
+            fill
+            className="object-cover"
+            sizes="(min-width: 1024px) 58vw, 100vw"
+          />
+        </div>
+      </Reveal>
+
+    </div>
+  </Container>
+</section>
 
       {/* WHO WE ARE TODAY */}
 
@@ -185,11 +194,17 @@ export default function AboutPage() {
                 Close To Home
               </p>
 
-              <h2 className="mt-6 text-4xl font-light leading-tight md:text-6xl">
-                Based in
-                <br />
-                Stansted Mountfitchet.
-              </h2>
+              <h2 className="mt-6 text-4xl font-light leading-tight text-white md:text-5xl">
+  <span className="block whitespace-nowrap">
+    Bishop&apos;s Stortford
+  </span>
+
+  <span className="my-7 block h-px w-full max-w-[380px] bg-[#A7744A]" />
+
+  <span className="block whitespace-nowrap">
+    Stansted Mountfitchet
+  </span>
+</h2>
             </Reveal>
 
             <Reveal
@@ -197,7 +212,7 @@ export default function AboutPage() {
               className="lg:col-span-6 lg:col-start-7"
             >
               <p className="text-xl font-light leading-9 text-white md:text-2xl">
-  Based in Stansted Mountfitchet, we design and build bespoke garden
+  Based in Bishop&apos;s Stortford & Stansted Mountfitchet, we design and build bespoke garden
   rooms for homeowners across Essex, Hertfordshire and the surrounding
   area.
 </p>

@@ -170,11 +170,15 @@ export default function GalleryPage() {
                 Start With An Idea
               </p>
 
-              <h2 className="mt-4 text-4xl font-normal leading-tight text-[#23352B] md:text-6xl">
-                No catalogue.
-                <br />
-                No fixed formula.
-              </h2>
+              <h2 className="mt-6 text-4xl font-light leading-tight text-[#23352B] md:text-5xl">
+  <span className="block whitespace-nowrap">
+    No catalogue.
+  </span>
+
+  <span className="mt-2 block whitespace-nowrap">
+    No fixed formula.
+  </span>
+</h2>
             </Reveal>
 
             <Reveal

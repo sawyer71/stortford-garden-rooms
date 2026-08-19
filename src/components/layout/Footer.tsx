@@ -55,8 +55,8 @@ export default function Footer() {
               </p>
 
               <p className="mt-4 max-w-md text-sm leading-6 text-white/45">
-                Based in Stansted Mountfitchet and serving homeowners across
-                Essex and Hertfordshire.
+                Serving homeowners across Bishop&apos;s Stortford, Stansted
+                Mountfitchet and surrounding areas.
               </p>
             </div>
 
@@ -87,38 +87,37 @@ export default function Footer() {
                 Contact
               </p>
 
-              <div className="mt-5 space-y-4 text-sm text-white/65">
-                <p>
-                  Stansted Mountfitchet
-                  <br />
-                  Essex
-                </p>
+              <div className="mt-5 space-y-5 text-sm text-white/65">
+                <div>
+                  <p>Email:</p>
 
-                <a
-                  href="mailto:hello@stortfordgardenrooms.co.uk"
-                  className="block w-fit transition duration-300 hover:text-white"
-                >
-                  hello@stortfordgardenrooms.co.uk
-                </a>
+                  <a
+                    href="mailto:enquiries@stortfordgardenrooms.co.uk"
+                    className="mt-1 block text-white transition-colors hover:text-[#A7744A]"
+                  >
+                    enquiries@stortfordgardenrooms.co.uk
+                  </a>
+                </div>
 
-                <a
-                  href="tel:+441279000000"
-                  className="block w-fit transition duration-300 hover:text-white"
+                <div>
+                  <p>Mobile:</p>
+
+                  <a
+                    href="tel:07570460530"
+                    className="mt-1 block text-white transition-colors hover:text-[#A7744A]"
+                  >
+                    07570 460530
+                  </a>
+                </div>
+
+                <Link
+                  href="/project-planner"
+                  className="inline-flex items-center gap-3 pt-3 text-sm font-medium text-white transition-colors hover:text-[#A7744A]"
                 >
-                  01279 000000
-                </a>
+                  Start Your Project
+                  <span>→</span>
+                </Link>
               </div>
-
-              <Link
-                href="/project-planner"
-                className="group mt-7 inline-flex items-center gap-3 text-sm font-medium text-white"
-              >
-                Start Your Project
-
-                <span className="transition-transform duration-300 group-hover:translate-x-1">
-                  →
-                </span>
-              </Link>
             </div>
           </div>
 
@@ -126,7 +125,8 @@ export default function Footer() {
 
           <div className="mt-14 flex flex-col gap-5 border-t border-white/10 pt-7 text-xs text-white/40 md:flex-row md:items-center md:justify-between">
             <p>
-              © {new Date().getFullYear()} Stortford Garden Rooms. All rights reserved.
+              © {new Date().getFullYear()} Stortford Garden Rooms. All rights
+              reserved.
             </p>
 
             <div className="flex flex-wrap gap-x-6 gap-y-2">

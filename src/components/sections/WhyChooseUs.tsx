@@ -40,11 +40,14 @@ export default function WhyChooseUs() {
               Why Stortford Garden Rooms
             </p>
 
-            <h2 className="mt-4 text-4xl font-light leading-tight md:text-6xl">
-              Your space should
-              <br />
-              feel like yours.
-            </h2>
+            <h2 className="mt-4 text-4xl font-light leading-tight md:text-5xl lg:text-5xl">
+  <span className="block whitespace-nowrap">
+    Your space should
+  </span>
+  <span className="block whitespace-nowrap">
+    feel like yours.
+  </span>
+</h2>
           </Reveal>
 
           <Reveal
@@ -99,20 +102,20 @@ export default function WhyChooseUs() {
         {/* Closing Statement */}
 
         <Reveal
-          delay={0.15}
-          className="mt-12 border-t border-white/20 pt-8"
-        >
-          <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
-            <p className="max-w-3xl text-2xl font-light leading-8 text-white md:text-3xl">
-              Your garden is different. Your lifestyle is different.
-              Your garden room should be too.
-            </p>
+  delay={0.15}
+  className="mt-12 pt-8 text-center"
+>
+  <p className="mx-auto max-w-4xl text-2xl font-light leading-9 text-white md:text-3xl">
+    Your garden is different. Your lifestyle is different.
+    <br className="hidden md:block" />
+    Your garden room should be too.
+  </p>
 
-            <p className="shrink-0 text-sm uppercase tracking-[0.2em] text-[#D8D2C7]/70">
-              Bespoke by design
-            </p>
-          </div>
-        </Reveal>
+  <p className="mt-5 text-sm uppercase tracking-[0.25em] text-[#D8D2C7]/70">
+    Bespoke by design
+  </p>
+</Reveal>
+
       </Container>
     </section>
   );

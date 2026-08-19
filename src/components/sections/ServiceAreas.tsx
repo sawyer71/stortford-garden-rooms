@@ -24,11 +24,14 @@ export default function ServiceAreas() {
               Local Garden Room Specialists
             </p>
 
-            <h2 className="mt-6 text-4xl font-light leading-tight md:text-6xl">
-              Beautiful spaces,
-              <br />
-              built locally.
-            </h2>
+            <h2 className="mt-6 text-4xl font-light leading-tight md:text-5xl">
+  <span className="block whitespace-nowrap">
+    Beautiful spaces,
+  </span>
+  <span className="mt-2 block whitespace-nowrap">
+    built locally.
+  </span>
+</h2>
 
             <p className="mt-8 max-w-lg text-lg leading-8 text-white/70">
               Based in Bishops Stortford and Stansted Mountfitchet, we design and build bespoke

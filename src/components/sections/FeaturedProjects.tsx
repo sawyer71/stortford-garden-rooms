@@ -49,11 +49,9 @@ export default function FeaturedProjects() {
               Garden Room Inspiration
             </p>
 
-            <h2 className="mt-4 text-4xl font-light leading-[1.05] text-[#23352B] md:text-6xl">
-              Imagine what
-              <br />
-              your garden could become.
-            </h2>
+            <h2 className="mt-4 text-4xl font-light leading-[1.05] text-[#23352B] md:text-5xl lg:whitespace-nowrap">
+  Imagine what your garden could become.
+</h2>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-[#2A2A2A]/70">
               Every garden room can be completely different. These ideas are
@@ -157,36 +155,41 @@ export default function FeaturedProjects() {
 
         {/* Closing CTA */}
 
-        <Reveal
-          delay={0.15}
-          className="mt-16 border-t border-[#23352B]/10 pt-8 md:mt-20"
-        >
-          <div className="grid gap-6 md:grid-cols-12 md:items-center">
-            <div className="md:col-span-7">
-              <p className="text-sm uppercase tracking-[0.2em] text-[#A7744A]">
-                Your Project Could Be Completely Different
-              </p>
+<Reveal
+  delay={0.15}
+  className="mt-16 border-t border-[#23352B]/10 pt-8 md:mt-20"
+>
+  <div className="grid gap-6 md:grid-cols-12 md:items-center">
+    <div className="md:col-span-8">
+      <p className="text-sm uppercase tracking-[0.2em] text-[#A7744A]">
+        Your Project Could Be Completely Different
+      </p>
 
-              <p className="mt-4 max-w-2xl text-2xl font-light leading-8 text-[#23352B] md:text-3xl">
-                Have an idea that doesn&apos;t fit neatly into a category?
-                That&apos;s exactly what bespoke is for.
-              </p>
-            </div>
+      <p className="mt-4 text-2xl font-light leading-8 text-[#23352B] md:text-3xl">
+  <span className="block">
+    Have an idea that doesn&apos;t fit neatly into a category?
+  </span>
 
-            <div className="md:col-span-4 md:col-start-9 md:text-right">
-              <Link
-                href="/project-planner"
-                className="group inline-flex items-center gap-3 text-sm uppercase tracking-[0.2em] text-[#23352B]"
-              >
-                <span>Start Your Project</span>
+  <span className="mt-2 block">
+    That&apos;s exactly what bespoke is for.
+  </span>
+</p>
+    </div>
 
-                <span className="transition-transform duration-300 group-hover:translate-x-2">
-                  →
-                </span>
-              </Link>
-            </div>
-          </div>
-        </Reveal>
+    <div className="md:col-span-4 md:text-right">
+      <Link
+        href="/project-planner"
+        className="group inline-flex items-center gap-3 text-sm uppercase tracking-[0.2em] text-[#23352B]"
+      >
+        <span>Start Your Project</span>
+
+        <span className="transition-transform duration-300 group-hover:translate-x-2">
+          →
+        </span>
+      </Link>
+    </div>
+  </div>
+</Reveal>
       </Container>
     </section>
   );
