@@ -147,9 +147,9 @@ export async function POST(request: Request) {
     const subject = `New Garden Room Enquiry — ${enquiry.postcode} — ${enquiry.budget}`;
 
     const { data, error } = await resend.emails.send({
-      from: "Stortford Garden Rooms <onboarding@resend.dev>",
+      from: "Stortford Garden Rooms <website@stortfordgardenrooms.co.uk>",
 
-      to: [enquiryEmail],
+to: [enquiryEmail],
 
       replyTo: enquiry.email,
 

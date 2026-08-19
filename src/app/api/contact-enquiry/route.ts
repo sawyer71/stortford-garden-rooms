@@ -4,6 +4,8 @@ import { Resend } from "resend";
 const resend = new Resend(
   process.env.RESEND_API_KEY
 );
+const enquiryEmail =
+  process.env.ENQUIRY_EMAIL;
 
 export async function POST(
   request: Request
@@ -43,14 +45,13 @@ if (faxnumber?.trim()) {
     }
 
     const { data, error } =
-      await resend.emails.send({
-        from:
-          process.env.CONTACT_FROM_EMAIL ||
-          "Stortford Garden Rooms <onboarding@resend.dev>",
+      await resend.emails.send({      
+  from:
+  "Stortford Garden Rooms <website@stortfordgardenrooms.co.uk>",
 
-        to:
-          process.env.CONTACT_TO_EMAIL ||
-          "chrissawyer1@hotmail.co.uk",
+to:
+  enquiryEmail ||
+  "enquiries@stortfordgardenrooms.co.uk",
 
         replyTo: email.trim(),
 
