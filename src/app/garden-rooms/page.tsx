@@ -103,12 +103,12 @@ export default function GardenRoomsPage() {
               Bespoke Garden Rooms
             </p>
 
-            <h1 className="max-w-5xl text-[2.75rem] font-light leading-[1.02] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
-  <span className="block whitespace-nowrap">
+            <h1 className="max-w-5xl text-[2.4rem] font-light leading-[1.02] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+  <span className="block sm:whitespace-nowrap">
     Designed for your garden.
   </span>
 
-  <span className="mt-3 block whitespace-nowrap">
+  <span className="mt-3 block sm:whitespace-nowrap">
     Built around your life.
   </span>
 </h1>
