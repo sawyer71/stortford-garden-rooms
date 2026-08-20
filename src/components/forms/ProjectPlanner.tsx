@@ -347,16 +347,22 @@ export default function ProjectPlanner() {
         await response.json();
 
       if (
-        !response.ok ||
-        !result.success
-      ) {
-        throw new Error(
-          result.message ||
-            "We couldn't send your enquiry. Please try again.",
-        );
-      }
+  !response.ok ||
+  !result.success
+) {
+  throw new Error(
+    result.message ||
+      "We couldn't send your enquiry. Please try again."
+  );
+}
 
-      setSubmitted(true);
+// Google Analytics — successful Project Planner enquiry
+window.gtag?.("event", "generate_lead", {
+  form_name: "project_planner",
+  lead_type: "project_enquiry",
+});
+
+setSubmitted(true);
 
       window.scrollTo({
         top: 0,
