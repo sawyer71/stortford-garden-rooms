@@ -68,7 +68,7 @@ const faxNumber = String(formData.get("fax_number") || "");
       const result =
         await response.json();
 
-      if (
+            if (
         !response.ok ||
         !result.success
       ) {
@@ -78,7 +78,13 @@ const faxNumber = String(formData.get("fax_number") || "");
         );
       }
 
-      setSubmitted(true);
+      // Google Analytics — successful contact enquiry
+window.gtag?.("event", "generate_lead", {
+  form_name: "contact_form",
+  lead_type: "general_enquiry",
+});
+
+setSubmitted(true);
 
       window.scrollTo({
         top: 0,
@@ -434,7 +440,7 @@ const faxNumber = String(formData.get("fax_number") || "");
                   <p className="max-w-sm text-xs leading-5 text-[#2A2A2A]/45">
   Your details will only be used to respond to your enquiry. See our{" "}
   <Link
-    href="/privacy-policy"
+    href="/privacy"
     className="underline underline-offset-2 transition hover:text-[#23352B]"
   >
     Privacy Policy
