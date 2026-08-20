@@ -8,14 +8,18 @@ import {
   Manrope,
 } from "next/font/google";
 
+import Script from "next/script";
+
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+
+import LocalBusinessSchema from "@/components/seo/LocalBusinessSchema";
 
 import { siteConfig } from "@/lib/seo";
 
 import "./globals.css";
 
-import LocalBusinessSchema from "@/components/seo/LocalBusinessSchema";
+import CookieConsent from "@/components/CookieConsent";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -42,7 +46,6 @@ export const metadata: Metadata = {
   description:
     siteConfig.description,
 
-  
   authors: [
     {
       name: siteConfig.author,
@@ -52,8 +55,6 @@ export const metadata: Metadata = {
   creator: siteConfig.name,
 
   publisher: siteConfig.name,
-
-  
 
   openGraph: {
     type: "website",
@@ -125,16 +126,62 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
     >
       <body
-  className={`${manrope.variable} ${inter.variable} antialiased`}
->
-  <LocalBusinessSchema />
+        className={`${manrope.variable} ${inter.variable} antialiased`}
+      >
+        {/* Google Consent Mode — default to denied */}
+        <Script
+          id="google-consent-default"
+          strategy="beforeInteractive"
+        >
+          {`
+            window.dataLayer = window.dataLayer || [];
 
-  <Navbar />
+            function gtag(){
+              dataLayer.push(arguments);
+            }
 
-  {children}
+            gtag('consent', 'default', {
+              analytics_storage: 'denied',
+              ad_storage: 'denied',
+              ad_user_data: 'denied',
+              ad_personalization: 'denied'
+            });
+          `}
+        </Script>
 
-  <Footer />
-</body>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-VK39SYHQEY"
+          strategy="afterInteractive"
+        />
+
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+        >
+          {`
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag(){
+              dataLayer.push(arguments);
+            }
+
+            gtag('js', new Date());
+
+            gtag('config', 'G-VK39SYHQEY');
+          `}
+        </Script>
+
+        <LocalBusinessSchema />
+
+        <Navbar />
+
+        {children}
+
+        <Footer />
+
+        <CookieConsent />
+      </body>
     </html>
   );
 }
