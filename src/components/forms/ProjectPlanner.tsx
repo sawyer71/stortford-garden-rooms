@@ -357,7 +357,7 @@ export default function ProjectPlanner() {
 }
 
 // Google Analytics — successful Project Planner enquiry
-window.gtag?.("event", "generate_lead", {
+window.gtag?.("event", "project_enquiry", {
   form_name: "project_planner",
   lead_type: "project_enquiry",
 });
