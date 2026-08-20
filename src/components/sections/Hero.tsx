@@ -34,7 +34,7 @@ export default function Hero() {
           {/* Eyebrow */}
 
           <p className="mb-6 text-sm uppercase tracking-[0.35em] text-white/80">
-            Bespoke Garden Rooms · Bishops Stortford · Stansted Mountfitchet
+            Bespoke Garden Rooms · Bishop&apos;s Stortford · Stansted Mountfitchet
           </p>
 
           {/* Main Heading */}
@@ -42,16 +42,17 @@ export default function Hero() {
           <h1 className="max-w-4xl text-[2.75rem] font-light leading-[0.98] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl">
             More space.
             <br />
-            More possibilities.
+            More possibilities.S
           </h1>
 
           {/* Description */}
 
           <p className="mt-8 max-w-2xl text-base leading-7 text-white/80 md:text-lg md:leading-8">
-            Bespoke timber-framed garden rooms designed around the way you want
-            to work, relax, entertain and live — creating a beautiful space
-            that feels like a natural extension of your home.
-          </p>
+  Bespoke timber-framed garden rooms designed and built in Bishop&apos;s
+  Stortford, Stansted and the surrounding areas — creating beautiful spaces
+  to work, relax, entertain and live that feel like a natural extension of
+  your home.
+</p>
 
           {/* CTA */}
 

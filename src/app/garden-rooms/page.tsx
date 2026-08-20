@@ -6,10 +6,10 @@ import Container from "@/components/ui/Container";
 import Reveal from "@/components/animations/Reveal";
 
 export const metadata: Metadata = {
-  title: "Bespoke Garden Rooms in Essex & Hertfordshire",
+  title: "Bespoke Garden Rooms Essex & Hertfordshire",
 
   description:
-    "Discover bespoke garden rooms designed and built across Essex and Hertfordshire. Garden offices, gyms, bars, cinema rooms and more, with cedar or composite cladding.",
+    "Bespoke garden rooms across Essex and Hertfordshire, designed for offices, gyms, bars, cinema rooms and more, with cedar or composite cladding.",
 
   alternates: {
     canonical: "/garden-rooms",
@@ -17,10 +17,10 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Bespoke Garden Rooms in Essex & Hertfordshire | Stortford Garden Rooms",
+      "Bespoke Garden Rooms Essex & Hertfordshire | Stortford Garden Rooms",
 
     description:
-      "Discover bespoke garden rooms designed and built across Essex and Hertfordshire. Garden offices, gyms, bars, cinema rooms and more.",
+      "Bespoke garden rooms across Essex and Hertfordshire, designed for offices, gyms, bars, cinema rooms and more.",
 
     url: "/garden-rooms",
   },
@@ -114,9 +114,10 @@ export default function GardenRoomsPage() {
 </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80">
-              Beautifully designed timber-framed garden rooms, created around your space,
-your style and the way you want to use it.
-            </p>
+  Bespoke timber-framed garden rooms designed and built across Essex and
+  Hertfordshire, created around your space, your style and the way you want
+  to use it.
+</p>
 
             <div className="mt-8">
               <Link

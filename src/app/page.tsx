@@ -12,11 +12,11 @@ import CTASection from "@/components/sections/CTASection";
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Bespoke Garden Rooms in Essex & Hertfordshire | Stortford Garden Rooms",
+      "Garden Rooms Bishop's Stortford | Stortford Garden Rooms",
   },
 
   description:
-    "Bespoke garden rooms designed and built across Essex and Hertfordshire. Create a beautifully considered home office, gym, studio or entertainment space.",
+    "Bespoke garden rooms in Bishop's Stortford, Stansted and surrounding Essex & Hertfordshire. Designed and built for offices, gyms, studios and more.",
 
   alternates: {
     canonical: "/",
@@ -24,10 +24,10 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Bespoke Garden Rooms in Essex & Hertfordshire | Stortford Garden Rooms",
+      "Garden Rooms Bishop's Stortford | Stortford Garden Rooms",
 
     description:
-      "Bespoke garden rooms designed and built across Essex and Hertfordshire. Create a beautifully considered home office, gym, studio or entertainment space.",
+      "Bespoke garden rooms in Bishop's Stortford, Stansted and surrounding Essex & Hertfordshire. Designed and built for offices, gyms, studios and more.",
 
     url: "/",
   },

@@ -34,9 +34,9 @@ export default function ServiceAreas() {
 </h2>
 
             <p className="mt-8 max-w-lg text-lg leading-8 text-white/70">
-              Based in Bishops Stortford and Stansted Mountfitchet, we design and build bespoke
-              garden rooms for homeowners throughout the surrounding areas of
-              Essex and Hertfordshire.
+              Based in Bishop&apos;s Stortford and Stansted Mountfitchet, we design and build bespoke
+garden rooms for homeowners throughout the surrounding areas of
+Essex and Hertfordshire.
             </p>
           </Reveal>
 
