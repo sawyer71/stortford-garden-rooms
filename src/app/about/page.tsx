@@ -44,9 +44,10 @@ export default function AboutPage() {
             </h1>
 
             <p className="mt-8 max-w-2xl text-lg leading-8 text-white/70">
-              What began as a project to create more usable space at home
-              developed into an idea for helping others do exactly the same.
-            </p>
+  Stortford Garden Rooms began with a simple idea: to create more
+  usable space at home, then help other local homeowners do exactly
+  the same.
+</p>
           </Reveal>
         </Container>
       </section>
@@ -212,7 +213,7 @@ export default function AboutPage() {
               className="lg:col-span-6 lg:col-start-7"
             >
               <p className="text-xl font-light leading-9 text-white md:text-2xl">
-  Based in Bishop&apos;s Stortford & Stansted Mountfitchet, we design and build bespoke garden
+  Based in Bishop&apos;s Stortford and Stansted Mountfitchet, we design and build bespoke garden
   rooms for homeowners across Essex, Hertfordshire and the surrounding
   area.
 </p>

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Our Garden Room Design & Build Process",
 
   description:
-    "See how we design and build bespoke garden rooms, from the first consultation and design through to foundations, construction, finishing and handover.",
+    "See how we design and build bespoke garden rooms, from consultation and design through foundations, timber-frame construction, finishing and final handover.",
 
   alternates: {
     canonical: "/process",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
       "Our Garden Room Design & Build Process | Stortford Garden Rooms",
 
     description:
-      "Discover how we take your garden room from the first idea through design, construction, finishing and handover.",
+      "See how a bespoke garden room takes shape, from the first consultation and design through construction, finishing and handover.",
 
     url: "/process",
   },
@@ -211,9 +211,10 @@ export default function ProcessPage() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80">
-              Every bespoke garden room begins with an idea. Here&apos;s how we
-              take that idea through design, construction and completion.
-            </p>
+  Every bespoke garden room begins with an idea. Here&apos;s how we
+  take that idea through design, timber-frame construction, finishing
+  and final handover.
+</p>
 
             <div className="mt-8">
               <Link

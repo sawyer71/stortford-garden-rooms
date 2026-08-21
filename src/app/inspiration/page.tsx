@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Garden Room Ideas & Inspiration",
 
   description:
-    "Explore garden room ideas for home offices, gyms, bars, cinema rooms, games rooms and creative spaces, designed for homes across Essex and Hertfordshire.",
+    "Explore garden room ideas for home offices, gyms, bars, cinema rooms, games rooms and studios, with inspiration for creating your perfect garden space.",
 
   alternates: {
     canonical: "/inspiration",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
       "Garden Room Ideas & Inspiration | Stortford Garden Rooms",
 
     description:
-      "Explore inspiring ideas for bespoke garden offices, gyms, bars, cinema rooms, games rooms and creative spaces.",
+      "Explore inspiring garden room ideas for home offices, gyms, bars, cinema rooms, games rooms and creative spaces.",
 
     url: "/inspiration",
   },
@@ -152,10 +152,10 @@ export default function GalleryPage() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/75">
-              From focused workspaces to rooms for entertaining, training and
-              switching off, explore what a bespoke garden room could make
-              possible.
-            </p>
+  Explore garden room ideas for inspiring home offices, gyms,
+  entertainment spaces and places to simply switch off — all designed
+  around the way you want to use your space.
+</p>
           </Reveal>
         </Container>
       </section>

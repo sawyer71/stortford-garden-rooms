@@ -192,11 +192,10 @@ setSubmitted(true);
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/75">
-              Have a question or want to
-              speak to us about Stortford
-              Garden Rooms? Send us a message
-              and we&apos;ll get back to you.
-            </p>
+  Have a question or want to discuss your garden room project?
+  Send us a message and we&apos;ll get back to you to talk through
+  your ideas.
+</p>
           </Reveal>
         </Container>
       </section>
