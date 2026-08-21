@@ -42,7 +42,7 @@ export default function Hero() {
           <h1 className="max-w-4xl text-[2.75rem] font-light leading-[0.98] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl">
             More space.
             <br />
-            More possibilities.S
+            More possibilities.
           </h1>
 
           {/* Description */}
