@@ -6,6 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "",
     "/garden-rooms",
+    "/garden-rooms-bishops-stortford",
     "/inspiration",
     "/process",
     "/about",
@@ -24,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       route === ""
         ? 1
         : route === "/garden-rooms" ||
+            route === "/garden-rooms-bishops-stortford" ||
             route === "/inspiration" ||
             route === "/process"
           ? 0.9

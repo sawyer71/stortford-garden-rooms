@@ -1,15 +1,34 @@
+import Link from "next/link";
+
 import Reveal from "@/components/animations/Reveal";
 import Container from "@/components/ui/Container";
 
 const areas = [
-  "Stansted Mountfitchet",
-  "Bishop's Stortford",
-  "Saffron Walden",
-  "Great Dunmow",
-  "Sawbridgeworth",
-  "Harlow",
-  "Much Hadham",
-  "Takeley",
+  {
+    name: "Stansted Mountfitchet",
+  },
+  {
+    name: "Bishop's Stortford",
+    href: "/garden-rooms-bishops-stortford",
+  },
+  {
+    name: "Saffron Walden",
+  },
+  {
+    name: "Great Dunmow",
+  },
+  {
+    name: "Sawbridgeworth",
+  },
+  {
+    name: "Harlow",
+  },
+  {
+    name: "Much Hadham",
+  },
+  {
+    name: "Takeley",
+  },
 ];
 
 export default function ServiceAreas() {
@@ -47,26 +66,42 @@ Essex and Hertfordshire.
             className="lg:col-span-6 lg:col-start-7"
           >
             <div className="border-t border-white/20">
-              {areas.map((area, index) => (
-                <div
-                  key={area}
-                  className="group flex items-center justify-between border-b border-white/20 py-6"
-                >
-                  <div className="flex items-center gap-6">
-                    <span className="text-xs text-white/40">
-                      0{index + 1}
-                    </span>
+              {areas.map((area, index) => {
+  const content = (
+    <>
+      <div className="flex items-center gap-6">
+        <span className="text-xs text-white/40">
+          0{index + 1}
+        </span>
 
-                    <span className="text-xl font-light text-white transition-transform duration-300 group-hover:translate-x-2 md:text-2xl">
-                      {area}
-                    </span>
-                  </div>
+        <span className="text-xl font-light text-white transition-transform duration-300 group-hover:translate-x-2 md:text-2xl">
+          {area.name}
+        </span>
+      </div>
 
-                  <span className="text-white/30 transition-all duration-300 group-hover:translate-x-2 group-hover:text-[#D8D2C7]">
-                    →
-                  </span>
-                </div>
-              ))}
+      <span className="text-white/30 transition-all duration-300 group-hover:translate-x-2 group-hover:text-[#D8D2C7]">
+        →
+      </span>
+    </>
+  );
+
+  return area.href ? (
+    <Link
+      key={area.name}
+      href={area.href}
+      className="group flex items-center justify-between border-b border-white/20 py-6"
+    >
+      {content}
+    </Link>
+  ) : (
+    <div
+      key={area.name}
+      className="group flex items-center justify-between border-b border-white/20 py-6"
+    >
+      {content}
+    </div>
+  );
+})}
             </div>
           </Reveal>
         </div>
