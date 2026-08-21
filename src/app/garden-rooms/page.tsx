@@ -411,18 +411,29 @@ export default function GardenRoomsPage() {
                 possibilities for your garden.
               </p>
 
-              <div className="mt-8">
-                <Link
-                  href="/project-planner"
-                  className="group inline-flex items-center gap-4 rounded-full bg-white px-8 py-4 text-sm font-medium text-[#23352B] transition duration-300 hover:bg-[#F7F5F2]"
-                >
-                  <span>Start Your Project</span>
+              <div className="mt-8 flex flex-col items-center gap-6">
+  <Link
+    href="/project-planner"
+    className="group inline-flex items-center gap-4 rounded-full bg-white px-8 py-4 text-sm font-medium text-[#23352B] transition duration-300 hover:bg-[#F7F5F2]"
+  >
+    <span>Start Your Project</span>
 
-                  <span className="transition-transform duration-300 group-hover:translate-x-1">
-                    →
-                  </span>
-                </Link>
-              </div>
+    <span className="transition-transform duration-300 group-hover:translate-x-1">
+      →
+    </span>
+  </Link>
+
+  <Link
+    href="/garden-room-prices"
+    className="group inline-flex items-center gap-3 text-sm uppercase tracking-[0.2em] text-white/80 transition hover:text-white"
+  >
+    <span>View Garden Room Prices</span>
+
+    <span className="transition-transform duration-300 group-hover:translate-x-2">
+      →
+    </span>
+  </Link>
+</div>
             </Reveal>
           </div>
         </Container>

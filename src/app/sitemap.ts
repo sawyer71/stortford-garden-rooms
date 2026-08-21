@@ -6,6 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "",
     "/garden-rooms",
+    "/garden-room-prices",
     "/garden-rooms-bishops-stortford",
     "/inspiration",
     "/process",
@@ -25,10 +26,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       route === ""
         ? 1
         : route === "/garden-rooms" ||
-            route === "/garden-rooms-bishops-stortford" ||
-            route === "/inspiration" ||
-            route === "/process"
-          ? 0.9
+    route === "/garden-room-prices" ||
+    route === "/garden-rooms-bishops-stortford" ||
+    route === "/inspiration" ||
+    route === "/process"
+  ? 0.9
           : route === "/about" ||
               route === "/contact" ||
               route === "/project-planner"
